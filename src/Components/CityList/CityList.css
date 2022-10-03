@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.citys{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CitiesList{
+    width: 100%;
+    max-width: 250px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 7px rgb(221, 221, 221);
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.CitiesList:hover{
+    cursor: pointer;
+    border-bottom: 5px solid rgb(15, 128, 180);
+    transition: .2s;
+}
+
+@media (max-width: 768px){ 
+    
+    .CitiesList{
+        max-width: 95%;
+    }
+
+}
