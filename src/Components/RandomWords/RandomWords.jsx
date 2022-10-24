@@ -3,7 +3,7 @@ import axios from "axios";
 import RandomGifs from "../RandomGifs/RandonGifs";
 import Typography from "@material-ui/core/Typography";
 
-const RandomWords = (props) => {
+const RandomWords = () => {
   const [mipalabra, setMipalabra] = useState("");
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const RandomWords = (props) => {
         .get(url)
         .then((response) => {
           const { data } = response;
-          const RandomWord = data.fact.split(" ",4).join(" ").replace(',', '')
+          const RandomWord = data.fact.split(" ", 4).join(" ").replace(",", "");
 
           setMipalabra(RandomWord);
         })
@@ -41,7 +41,7 @@ const RandomWords = (props) => {
   return (
     <div className="mainRandomW">
       <Typography variant="h5">
-        <RandomGifs props={mipalabra}></RandomGifs>
+        <RandomGifs palabra={mipalabra}></RandomGifs>
       </Typography>
     </div>
   );

@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 // import PropTypes from 'prop-types'
 
-const RandonGifs = ({ props }) => {
+const RandonGifs = ({ palabra }) => {
   const api_key = "XrhlhNkC54XUvG0UDVbWFWVNJuddJvta";
-  const SearchWord = props;
-  console.log(SearchWord);
+  const SearchWord = palabra;
   const Url = `https://api.giphy.com/v1/gifs/random?api_key=${api_key}&tag=${SearchWord}`;
-  console.log(Url);
-  const [miImagen, setmiImagen] = useState('');
+  const [miImagen, setmiImagen] = useState("");
 
   useEffect(() => {
     const consulta = () => {
@@ -16,7 +14,7 @@ const RandonGifs = ({ props }) => {
         .get(Url)
         .then((response) => {
           const { data } = response;
-          
+
           const ImagneGif = data.data.images.fixed_width_still.url;
 
           setmiImagen(ImagneGif);
@@ -45,7 +43,7 @@ const RandonGifs = ({ props }) => {
   return (
     <div className="mainRandomG">
       <img className="ImgRandom" src={miImagen} alt="" />
-      <h1 className="RandomWord">{props}</h1>
+      <h1 className="RandomWord">{palabra}</h1>
     </div>
   );
 };

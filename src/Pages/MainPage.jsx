@@ -1,7 +1,7 @@
 import React from "react";
 import RandomWords from "../Components/RandomWords/RandomWords";
 
-const MainPage = (props) => {
+const MainPage = () => {
   return (
     <div className="mainPage">
       <RandomWords />

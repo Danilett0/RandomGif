@@ -4,7 +4,7 @@ import ImageNotFound from "../Images/not_found.jpg";
 import Typography from "@material-ui/core/Typography";
 import "./styles.css";
 
-const NotFoundPage = (props) => {
+const NotFoundPage = () => {
   return (
     <div className="mainNotFound">
       <img className="ImgNotFound" src={ImageNotFound} alt="" />
