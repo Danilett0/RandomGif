@@ -6,11 +6,14 @@ const RandonGifs = ({ palabra }) => {
   const api_key = "XrhlhNkC54XUvG0UDVbWFWVNJuddJvta";
   const SearchWord = palabra;
   const Url = `https://api.giphy.com/v1/gifs/random?api_key=${api_key}&tag=${SearchWord}`;
-  const [miImagen, setmiImagen] = useState("");
+  
+  const [miImagen, setmiImagen] = useState(SearchWord);
 
   useEffect(() => {
     const consulta = () => {
-      axios
+      if(SearchWord){
+        console.log(Url);
+        axios
         .get(Url)
         .then((response) => {
           const { data } = response;
@@ -35,10 +38,14 @@ const RandonGifs = ({ palabra }) => {
             console.log("errores imprevistos");
           }
         });
+      }else{
+        console.log('nadaaaaa');
+      }
+  
     };
 
     consulta();
-  }, []);
+  }, [ SearchWord,Url]);
 
   return (
     <div className="mainRandomG">
