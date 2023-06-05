@@ -3,7 +3,7 @@ import RandomWords from "../Components/RandomWords/RandomWords";
 
 const MainPage = () => {
   return (
-    <div className="mainPage">
+    <div className="mainPage" >
       <RandomWords />
     </div>
   );
