@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="main">
       <Router>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="loading-skeleton"></div>}>
           <Routes>
             <Route path="/RandomGif" element={<WelcomePage />} />
             <Route path="/main" element={<MainPage />} />
