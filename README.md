@@ -10,6 +10,7 @@ Para instalar RandomIMG, sigue estos pasos:
 
 1. Clona el repositorio de GitHub en tu máquina local.
 2. Abre una terminal en la raíz del proyecto y ejecuta el comando `npm install` para instalar las dependencias necesarias.
+3. Ya isntaladas todas las dependecias, ejecuta el comando `npm start` para inicializar el proyecto
 
 ## Uso
 
