@@ -3,3 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+h5 {
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px !important;
+  }

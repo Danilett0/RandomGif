@@ -1,24 +1,20 @@
-import React from "react";
-import WelcomePage from "./Pages/WelcomePage";
-import MainPage from "./Pages/MainPage";
-import NotFoundPage from "./Pages/NotFoundPage";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+const WelcomePage = lazy(() => import("./Pages/WelcomePage"));
+const MainPage = lazy(() => import("./Pages/MainPage"));
+const NotFoundPage = lazy(() => import("./Pages/NotFoundPage"));
 
 const App = () => {
   return (
     <div className="main">
       <Router>
-        <Switch>
-          <Route exact path="/RandomGif">
-            <WelcomePage />
-          </Route>
-          <Route path="/main">
-            <MainPage />
-          </Route>
-          <Route>
-            <NotFoundPage />
-          </Route>
-        </Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/RandomGif" element={<WelcomePage />} />
+            <Route path="/main" element={<MainPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
       </Router>
     </div>
   );

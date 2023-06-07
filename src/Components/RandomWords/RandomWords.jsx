@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RandomGifs from "../RandomGifs/RandonGifs";
 import Typography from "@material-ui/core/Typography";
+import './styles.css'
 
 const RandomWords = () => {
   const [mipalabra, setMipalabra] = useState("");

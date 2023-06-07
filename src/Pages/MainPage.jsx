@@ -1,5 +1,6 @@
 import React from "react";
 import RandomWords from "../Components/RandomWords/RandomWords";
+import './styles/styles.css'
 
 const MainPage = () => {
   return (
