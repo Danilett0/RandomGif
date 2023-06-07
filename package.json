@@ -1,6 +1,7 @@
 {
   "name": "gif-random",
   "version": "0.1.0",
+  "homepage": "https://danilett0.github.io/RandomGif",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -34,7 +35,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

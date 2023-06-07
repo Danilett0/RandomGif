@@ -9,7 +9,7 @@ const App = () => {
     <div className="main">
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/RandomGif">
             <WelcomePage />
           </Route>
           <Route path="/main">
