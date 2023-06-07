@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/RandomGif/static/css/main.ea566d6d.css",
+    "main.js": "/RandomGif/static/js/main.8de5b43f.js",
+    "static/media/not_found.jpg": "/RandomGif/static/media/not_found.0dc03ca41b684845637b.jpg",
+    "index.html": "/RandomGif/index.html",
+    "main.ea566d6d.css.map": "/RandomGif/static/css/main.ea566d6d.css.map",
+    "main.8de5b43f.js.map": "/RandomGif/static/js/main.8de5b43f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea566d6d.css",
+    "static/js/main.8de5b43f.js"
+  ]
+}
