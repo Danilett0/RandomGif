@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ImageNotFound from "../Images/not_found.jpg";
 import Typography from "@material-ui/core/Typography";
-import "./styles/styles.css";
 
 const NotFoundPage = () => {
   return (

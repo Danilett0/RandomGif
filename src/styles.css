@@ -2,6 +2,12 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #061a22;
 }
 
 h5 {
@@ -16,17 +22,33 @@ h5 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .loading-skeleton {
   width: 400px;
-  height: 400px;
+  height: 300px;
   animation: loading 2s infinite;
   border-radius: 3px;
 }
+
 .loading-skeleton::before {
   content: "";
   position: absolute;
@@ -38,4 +60,186 @@ h5 {
   border: 5px solid #ddd;
   border-top-color: #333;
   animation: spin 0.5s infinite linear;
+}
+
+.mainRandomG {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ImgRandom {
+  width: 400px;
+  height: 300px;
+  border-radius: 3px 3px 0 0;
+}
+
+.mainNotFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainNotFound img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgb(236, 236, 236);
+}
+
+.mainNotFound h6 {
+  color: white;
+  background-color: #1e8390;
+  margin-top: -35px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.mainNotFound h6:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.fullWelcome {
+  background: #051923;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.icono {
+  color: rgb(88, 88, 88);
+}
+
+.icono:hover {
+  transition: 1.5s;
+  color: rgb(201, 3, 102);
+}
+
+.mainWelcome {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  padding: 25px;
+  border-bottom: 25px solid transparent;
+  border-top: 25px solid transparent;
+}
+
+.mainWelcome:hover {
+  border-bottom: 25px solid rgb(201, 3, 102);
+  border-top: 25px solid rgb(201, 3, 102);
+  transition: 1.5s;
+}
+
+.mainRandomW {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  padding: 25px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px rgb(116, 116, 116);
+}
+
+.RandomWord {
+  background: #1e8390;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.contador {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 15px;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contador p {
+  display: flex;
+  align-items: center;
+}
+
+.contador .number {
+  background-color: #27858f;
+  border-radius: 50%;
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 5px;
+}
+
+.mainRandomW button {
+  background: #1e8390;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.mainRandomW button.new {
+  background-color: rgb(185, 31, 231);
+}
+
+.mainRandomW button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.opciones {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opciones input {
+  padding: 8px;
+  margin: 0px 10px;
+  width: 265px;
+}
+
+.opciones .Icon {
+  font-size: 30px;
+  color: #1e8390;
+  animation: scale 1s infinite linear;
+}
+
+.opciones .Icon:hover {
+  animation: spin 2s infinite linear;
+  cursor: pointer;
 }

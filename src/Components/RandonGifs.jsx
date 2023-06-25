@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './styles.css'
 
 const RandonGifs = ({ palabra }) => {
   const api_key = "XrhlhNkC54XUvG0UDVbWFWVNJuddJvta";
@@ -8,24 +7,18 @@ const RandonGifs = ({ palabra }) => {
   const Url = `https://api.giphy.com/v1/gifs/random?api_key=${api_key}&tag=${SearchWord}`;
 
   const [miImagen, setmiImagen] = useState(SearchWord);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const consulta = () => {
       if (SearchWord) {
-        setIsLoading(true);
-        axios
-          .get(Url)
-          .then((response) => {
+        axios.get(Url).then((response) => {
             const { data } = response;
-
-            const ImagneGif = data.data.images.fixed_width_still.url;
-
+            const ImagneGif = data.data.images.preview_gif.url;
             setmiImagen(ImagneGif);
             setIsLoading(false);
           })
           .catch((error) => {
-            setIsLoading(false);
             if (error.response) {
               const { data, status } = error.response;
               console.log(
@@ -33,16 +26,8 @@ const RandonGifs = ({ palabra }) => {
                 data.message,
                 status
               );
-            } else if (error.request) {
-              console.log(
-                "servidor no disponible o no hay conexxio de internet "
-              );
-            } else {
-              console.log("errores imprevistos");
-            }
+            } else if (error.request) { console.log("servidor no disponible") }
           });
-      } else {
-        console.log("nadaaaaa");
       }
     };
 
