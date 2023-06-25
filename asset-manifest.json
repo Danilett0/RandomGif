@@ -1,32 +1,14 @@
 {
   "files": {
-    "main.css": "/RandomGif/static/css/main.0732c4e6.css",
-    "main.js": "/RandomGif/static/js/main.3f6d28ca.js",
-    "static/css/347.b2a18add.chunk.css": "/RandomGif/static/css/347.b2a18add.chunk.css",
-    "static/js/347.0732b09c.chunk.js": "/RandomGif/static/js/347.0732b09c.chunk.js",
-    "static/css/314.f4243e54.chunk.css": "/RandomGif/static/css/314.f4243e54.chunk.css",
-    "static/js/314.778a99e3.chunk.js": "/RandomGif/static/js/314.778a99e3.chunk.js",
-    "static/css/505.b2a18add.chunk.css": "/RandomGif/static/css/505.b2a18add.chunk.css",
-    "static/js/505.f3de652c.chunk.js": "/RandomGif/static/js/505.f3de652c.chunk.js",
-    "static/js/302.12b64201.chunk.js": "/RandomGif/static/js/302.12b64201.chunk.js",
-    "static/js/243.c29da7e7.chunk.js": "/RandomGif/static/js/243.c29da7e7.chunk.js",
-    "static/js/446.02ba22f0.chunk.js": "/RandomGif/static/js/446.02ba22f0.chunk.js",
+    "main.css": "/RandomGif/static/css/main.f6c142f7.css",
+    "main.js": "/RandomGif/static/js/main.26ddeddb.js",
     "static/media/not_found.jpg": "/RandomGif/static/media/not_found.0dc03ca41b684845637b.jpg",
     "index.html": "/RandomGif/index.html",
-    "main.0732c4e6.css.map": "/RandomGif/static/css/main.0732c4e6.css.map",
-    "main.3f6d28ca.js.map": "/RandomGif/static/js/main.3f6d28ca.js.map",
-    "347.b2a18add.chunk.css.map": "/RandomGif/static/css/347.b2a18add.chunk.css.map",
-    "347.0732b09c.chunk.js.map": "/RandomGif/static/js/347.0732b09c.chunk.js.map",
-    "314.f4243e54.chunk.css.map": "/RandomGif/static/css/314.f4243e54.chunk.css.map",
-    "314.778a99e3.chunk.js.map": "/RandomGif/static/js/314.778a99e3.chunk.js.map",
-    "505.b2a18add.chunk.css.map": "/RandomGif/static/css/505.b2a18add.chunk.css.map",
-    "505.f3de652c.chunk.js.map": "/RandomGif/static/js/505.f3de652c.chunk.js.map",
-    "302.12b64201.chunk.js.map": "/RandomGif/static/js/302.12b64201.chunk.js.map",
-    "243.c29da7e7.chunk.js.map": "/RandomGif/static/js/243.c29da7e7.chunk.js.map",
-    "446.02ba22f0.chunk.js.map": "/RandomGif/static/js/446.02ba22f0.chunk.js.map"
+    "main.f6c142f7.css.map": "/RandomGif/static/css/main.f6c142f7.css.map",
+    "main.26ddeddb.js.map": "/RandomGif/static/js/main.26ddeddb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0732c4e6.css",
-    "static/js/main.3f6d28ca.js"
+    "static/css/main.f6c142f7.css",
+    "static/js/main.26ddeddb.js"
   ]
 }

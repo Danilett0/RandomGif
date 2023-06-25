@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgif_random=self.webpackChunkgif_random||[]).push([[505],{165:function(n,a,i){i.r(a),i.d(a,{default:function(){return o}});i(791);var c=i(87),t=i.p+"static/media/not_found.0dc03ca41b684845637b.jpg",e=i(302),s=(i(844),i(184)),o=function(){return(0,s.jsxs)("div",{className:"mainNotFound",children:[(0,s.jsx)("img",{className:"ImgNotFound",src:t,alt:""}),(0,s.jsx)(c.rU,{to:"/RandomGif",children:(0,s.jsx)(e.Z,{variant:"h6",children:"llevame al inicio"})})]})}},844:function(){}}]);
-//# sourceMappingURL=505.f3de652c.chunk.js.map
