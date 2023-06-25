@@ -1,18 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RandomGifs from "./RandonGifs";
+import { UrlRandomGif } from "../config/config.js";
 import { GiPerspectiveDiceSixFacesRandom as RandomImg } from "react-icons/gi";
 import Typography from "@material-ui/core/Typography";
 
 const RandomWords = () => {
   const [mipalabra, setMipalabra] = useState("");
   const [contador, setcontador] = useState(1);
-
-  const inputRef = useRef();
+  const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
-    const url = `https://catfact.ninja/fact`;
-    axios.get(url).then((response) => {
+    axios
+      .get(UrlRandomGif)
+      .then((response) => {
         const { data } = response;
         const RandomWord = data.fact.split(" ", 4).join(" ").replace(",", "");
 
@@ -32,9 +33,12 @@ const RandomWords = () => {
     setcontador(contador + 1);
   };
 
+  const GuardarValor = (event) => {
+    setInputValue(event.target.value);
+  };
+
   const BuscarGif = () => {
-    const nuevovalor = inputRef.current.value;
-    setMipalabra(nuevovalor);
+    setMipalabra(inputValue);
   };
 
   return (
@@ -52,7 +56,7 @@ const RandomWords = () => {
             onClick={GenerarGifRandom}
             title="Generar Random Gif"
           />
-          <input type="text" name="inputref" ref={inputRef} />
+          <input type="text" onChange={GuardarValor} />
           <button className="new" onClick={BuscarGif}>
             ¡Buscar!
           </button>

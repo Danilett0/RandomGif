@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { RandonWordApyKey } from "../config/config.js";
 import axios from "axios";
 
 const RandonGifs = ({ palabra }) => {
-  const api_key = "XrhlhNkC54XUvG0UDVbWFWVNJuddJvta";
   const SearchWord = palabra;
-  const Url = `https://api.giphy.com/v1/gifs/random?api_key=${api_key}&tag=${SearchWord}`;
+  const Url = `https://api.giphy.com/v1/gifs/random?api_key=${RandonWordApyKey}&tag=${SearchWord}`;
 
   const [miImagen, setmiImagen] = useState(SearchWord);
   const [isLoading, setIsLoading] = useState(true);
