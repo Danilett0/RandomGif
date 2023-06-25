@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WelcomePage from "./Pages/WelcomePage";
 import MainPage from "./Pages/MainPage";
 import NotFoundPage from "./Pages/NotFoundPage";
